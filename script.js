@@ -251,3 +251,11 @@ document.addEventListener('keydown', (e) => {
 
 // Initialize
 generateGallery();
+
+window.addEventListener('load', function() {
+    // Get the preloader element by its ID
+    const preloader = document.getElementById('preloader');
+
+    // Add the 'hidden' class to fade out the preloader
+    preloader.classList.add('hidden');
+  });
